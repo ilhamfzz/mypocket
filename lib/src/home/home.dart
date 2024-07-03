@@ -2,6 +2,8 @@ import 'package:eas_ppb/src/navbar/navbar_widget.dart';
 import 'package:eas_ppb/src/styles/styles.dart';
 import 'package:eas_ppb/util/launch_url.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 part 'widgets/home_app_bar.dart';
 part 'widgets/home_user_card.dart';

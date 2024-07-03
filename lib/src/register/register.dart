@@ -162,7 +162,13 @@ class _RegisterState extends State<Register> {
                         Size.fromHeight(44),
                       ),
                     ),
-                    child: const Text("Register"),
+                    child: const Text(
+                      "Register",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Styles.colorWhite,
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 32),
 

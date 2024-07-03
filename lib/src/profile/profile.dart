@@ -106,7 +106,7 @@ class _ProfileState extends State<Profile> {
                               width: 12,
                             ),
                             Text(
-                              "My Profile",
+                              "Edit Profile",
                               style: GoogleFonts.poppins(
                                   fontSize: 13, fontWeight: FontWeight.w500),
                             ),
