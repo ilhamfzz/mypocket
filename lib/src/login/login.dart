@@ -1,3 +1,5 @@
+import 'package:eas_ppb/src/home/home.dart';
+import 'package:eas_ppb/src/register/register.dart';
 import 'package:flutter/material.dart';
 import 'package:eas_ppb/src/styles/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -152,7 +154,7 @@ class _LoginState extends State<Login> {
                     onPressed: () {
                       if (_emailController.text.isNotEmpty &&
                           _passwordController.text.isNotEmpty) {
-                        Navigator.pushNamed(context, '/home');
+                        Navigator.pushNamed(context, Home.routeName);
                       }
                     },
                     style: Styles.primaryButton.copyWith(
@@ -180,12 +182,9 @@ class _LoginState extends State<Login> {
                         textAlign: TextAlign.center,
                       ),
                       InkWell(
-                        onTap: () {},
-                        // onTap: () {
-                        //   Navigator.of(context).pushNamed(
-                        //     RegisterView.routeName,
-                        //   );
-                        // },
+                        onTap: () {
+                          Navigator.pushNamed(context, Register.routeName);
+                        },
                         child: Text(
                           "Register here",
                           style: GoogleFonts.poppins(

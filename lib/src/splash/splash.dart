@@ -1,3 +1,4 @@
+import 'package:eas_ppb/src/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -14,7 +15,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, '/onboarding');
+      Navigator.pushReplacementNamed(context, Onboarding.routeName);
     });
   }
 

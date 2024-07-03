@@ -1,3 +1,5 @@
+import 'package:eas_ppb/src/login/login.dart';
+import 'package:eas_ppb/src/register/register.dart';
 import 'package:flutter/material.dart';
 import 'package:eas_ppb/src/styles/styles.dart';
 // import 'package:flutter_loyalty_point/src/view_models/onboarding/onboarding_view_model.dart';
@@ -66,7 +68,7 @@ class Onboarding extends StatelessWidget {
                   // button login section
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, "/login");
+                      Navigator.pushNamed(context, Login.routeName);
                     },
                     style: Styles.primaryButton.copyWith(
                       minimumSize: const WidgetStatePropertyAll(
@@ -86,7 +88,9 @@ class Onboarding extends StatelessWidget {
 
                   // button register section
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Register.routeName);
+                    },
                     style: Styles.secondaryButton.copyWith(
                       minimumSize: const WidgetStatePropertyAll(
                         Size.fromHeight(44),

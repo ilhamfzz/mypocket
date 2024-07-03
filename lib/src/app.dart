@@ -1,9 +1,13 @@
+import 'package:eas_ppb/src/history/history.dart';
+import 'package:eas_ppb/src/home/home.dart';
+import 'package:eas_ppb/src/profile/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:eas_ppb/src/styles/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:eas_ppb/src/splash/splash.dart';
 import 'package:eas_ppb/src/login/login.dart';
+import 'package:eas_ppb/src/register/register.dart';
 import 'package:eas_ppb/src/onboarding/onboarding.dart';
 
 class MyApp extends StatelessWidget {
@@ -57,7 +61,10 @@ class MyApp extends StatelessWidget {
         '/': (context) => const Splash(),
         '/onboarding': (context) => const Onboarding(),
         '/login': (context) => const Login(),
-        // '/home': (context) => const Home(),
+        '/register': (context) => const Register(),
+        '/home': (context) => const Home(),
+        '/history': (context) => const History(),
+        '/profile': (context) => const Profile(),
       },
       debugShowCheckedModeBanner: false,
     );
